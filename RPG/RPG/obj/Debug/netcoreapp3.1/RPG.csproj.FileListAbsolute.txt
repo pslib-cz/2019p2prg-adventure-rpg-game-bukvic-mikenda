@@ -10,8 +10,6 @@ C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RP
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\bin\Debug\netcoreapp3.1\RPG.Views.dll
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\bin\Debug\netcoreapp3.1\RPG.Views.pdb
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.csprojAssemblyReference.cache
-C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.csproj.CoreCompileInputs.cache
-C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.RazorAssemblyInfo.cache
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.RazorAssemblyInfo.cs
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.AssemblyInfoInputs.cache
@@ -35,3 +33,6 @@ C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RP
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.pdb
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.genruntimeconfig.cache
 C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.csproj.CopyComplete
+C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\bin\Debug\netcoreapp3.1\Utf8Json.dll
+C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.csproj.CoreCompileInputs.cache
+C:\Users\PC\source\repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.MvcApplicationPartsAssemblyInfo.cache
