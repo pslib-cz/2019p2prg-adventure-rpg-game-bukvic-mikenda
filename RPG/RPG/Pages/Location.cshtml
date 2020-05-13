@@ -1,8 +1,12 @@
 ﻿@page
 @model RPG.Pages.LocationModel
+@using RPG.Model
 @{
     ViewData["Title"] = "Location";
 }
 
-<h1>Location</h1>
+<div class="text-center">
+    <h1 class="display-4">@Model.location.Name</h1>
+    <p>@Model.location.Description</p>
+</div>
 
