@@ -22,9 +22,9 @@ namespace RPG.Pages
             _rpgLogic = rpgLogic;
         }
 
-        public void OnGet()
+        public void OnGet(int path)
         {
-            location = _rpgLogic.Play();
+            location = _rpgLogic.Play(path);
         }
     }
 }

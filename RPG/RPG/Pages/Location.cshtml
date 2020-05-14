@@ -5,8 +5,25 @@
     ViewData["Title"] = "Location";
 }
 
-<div class="text-center">
-    <h1 class="display-4">@Model.location.Name</h1>
-    <p>@Model.location.Description</p>
-</div>
+    <div class="text-center">
+        <h1 class="display-4">@Model.location.Name</h1>
+        <p>@Model.location.Description</p>
+
+        <hr />
+        @if (Model.location.Paths == null)
+        {
+            <p><a asp-page="/index">Začít znova</a></p>
+        }
+        else
+        {
+            foreach (var path in Model.location.Paths)
+            {
+                <p><a asp-page="/location" asp-route-path="@path.NextLocationId">@path.Description</a></p>
+            }
+        }
+
+
+    </div>
+
+
 

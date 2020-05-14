@@ -17,9 +17,9 @@ namespace RPG.Service
             _story = story;
         }
 
-        public Location Play()
+        public Location Play(int path)
         {
-            return _story.locations[0];
+            return _story.locations[path];
         }
     }
 }
