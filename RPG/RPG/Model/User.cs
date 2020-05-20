@@ -7,16 +7,7 @@ namespace RPG.Model
 {
     public class User
     {
-        public User(string first = "", string last = "")
-        {
-            FirstName = first;
-            LastName = last;
-        }
-
-        public Guid UserId { get; set; }
-        public string FullName => $"{FirstName} {LastName}";
-
-        private string FirstName;
-        private string LastName;
+        public int Food { get; set; } = 50;
+        public int Energy { get; set; } = 50;
     }
 }

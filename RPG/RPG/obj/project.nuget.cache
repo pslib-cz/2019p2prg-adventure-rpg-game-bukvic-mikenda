@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6uHPrvg2eBQJp0LOxqWcI2sIUH1cZa96vDmKrmpfaV8RKr/S2dqiIA83fEBnV12G3P5wWU+UV5TDsX7An/EtNA==",
+  "dgSpecHash": "1/KAWnFGJH3iyjT71YVLQXi2E3j+5ITMcKUEBq/JzVN04cUV5Pg17+ZenSuQ+vPlN8SKkzvKJ7+BMTH3jvWh4w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\PC\\source\\repos\\pslib-cz\\2019p2prg-adventure-rpg-game-bukvic-mikenda\\RPG\\RPG\\RPG.csproj",
+  "projectFilePath": "C:\\Users\\PC\\source\\repos\\2019p2prg-adventure-rpg-game-bukvic-mikenda\\RPG\\RPG\\RPG.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",

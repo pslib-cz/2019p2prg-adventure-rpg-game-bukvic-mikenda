@@ -30,9 +30,11 @@ namespace RPG
             services.AddSession();
 
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddSingleton<Random>();
             services.AddSingleton<Story>();
 
             services.AddScoped<RpgLogic>();
+            services.AddScoped<User>();
 
             services.AddTransient<Service.SessionStorage>();
 

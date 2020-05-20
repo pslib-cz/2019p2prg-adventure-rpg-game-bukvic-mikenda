@@ -11,20 +11,23 @@ namespace RPG.Pages
 {
     public class LocationModel : PageModel
     {
-        readonly SessionStorage _session;
         readonly RpgLogic _rpgLogic;
 
         public Location location { get; set; }
+        public User Stats { get; set; }
 
-        public LocationModel(SessionStorage session, RpgLogic rpgLogic)
+        public LocationModel(RpgLogic rpgLogic)
         {
-            _session = session;
             _rpgLogic = rpgLogic;
         }
 
         public void OnGet(int path)
         {
+            Stats = _rpgLogic.Stats;
+
+            //_rpgLogic.Sleep();
             location = _rpgLogic.Play(path);
         }
+
     }
 }
