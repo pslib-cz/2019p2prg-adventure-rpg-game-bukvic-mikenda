@@ -222,3 +222,6 @@ C:\Users\miken\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\
 C:\Users\miken\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.pdb
 C:\Users\miken\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\Razor\Pages\Story.cshtml.g.cs
 C:\Users\miken\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\Razor\Pages\Achievements.cshtml.g.cs
+C:\Users\miken\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\Razor\Pages\Tutorial.cshtml.g.cs
+C:\Users\miken\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.csproj.CoreCompileInputs.cache
+C:\Users\miken\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.genruntimeconfig.cache

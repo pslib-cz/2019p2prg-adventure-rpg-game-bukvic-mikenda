@@ -20,9 +20,12 @@
             {
                 <p><a asp-page="/location" asp-route-path="@path.NextLocationId">@path.Description</a></p>
             }
+            <p><a asp-page="/location" asp-page-handler="SearchFood" asp-route-path="@Model.location.Id">Hledat jídlo</a></p>
+            <p><a asp-page="/location" asp-page-handler="Sleep" asp-route-path="@Model.location.Id">Vyspat se</a></p>
         }
 
         <hr />
+
         <h2>Tvé statistiky:</h2>
         <p>Jídlo: @Model.Stats.Food%</p>
         <p>Energie: @Model.Stats.Energy%</p>

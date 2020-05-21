@@ -8,6 +8,7 @@ namespace RPG.Model
     public class User
     {
         public int Food { get; set; } = 50;
-        public int Energy { get; set; } = 50;
+        public int Energy { get; set; } = 35;
+        public HashSet<Achievement> Achievements = new HashSet<Achievement>();
     }
 }

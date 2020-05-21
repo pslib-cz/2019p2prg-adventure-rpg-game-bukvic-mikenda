@@ -1,8 +1,16 @@
 ﻿@page
 @model RPG.AchievementsModel
+@using RPG.Model
 @{
     ViewData["Title"] = "Achievements";
 }
 
 <h1>Achievements</h1>
+<ul>
+    @foreach (var a in Model.Stats.Achievements)
+    {
+        <li>@a.Name - @a.Description</li>
+    }
+
+</ul>
 <p><a>ZPĚT</a></p>

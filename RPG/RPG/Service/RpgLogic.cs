@@ -20,9 +20,10 @@ namespace RPG.Service
             _story = story;
             _rand = rand;
 
-            Stats = new User() { 
+            Stats = new User() {
                 Food = _session.Stats.Food,
-                Energy = _session.Stats.Energy
+                Energy = _session.Stats.Energy,
+                Achievements = _session.Stats.Achievements
             };
         }
 
@@ -43,6 +44,12 @@ namespace RPG.Service
         {
             Stats.Food += _rand.Next(50, 80);
             Stats.Energy -= _rand.Next(10, 20);
+            _session.SaveStats(Stats);
+        }
+
+        public void AddAchievement(string name, string description)
+        {
+            Stats.Achievements.Add(new Achievement() { Description = description, Name = name });
             _session.SaveStats(Stats);
         }
     }

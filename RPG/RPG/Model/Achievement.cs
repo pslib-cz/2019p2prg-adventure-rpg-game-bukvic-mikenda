@@ -5,14 +5,9 @@ using System.Threading.Tasks;
 
 namespace RPG.Model
 {
-    public class Location
+    public class Achievement
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public bool IsLocked { get; set; }
-        public List<Path> Paths { get; set; }     
-        public Achievement Achievement { get;set; }
     }
-       
 }
