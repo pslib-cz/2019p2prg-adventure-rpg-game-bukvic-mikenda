@@ -6,23 +6,25 @@
 }
 
     <div class="text-center">
+        @if (Model.location.Achievement != null)
+        {
+            <p>Získán nový úspěch - @Model.location.Achievement.Name (@Model.location.Achievement.Description) - <a asp-page="/Achievements">ZOBRAZIT ÚSPĚCHY</a></p>
+            <hr />
+        }
+
+        
+
         <h1 class="display-4">@Model.location.Name</h1>
         <p>@Model.location.Description</p>
 
         <hr />
-        @if (Model.location.Paths == null)
+
+        @foreach (var path in Model.location.Paths)
         {
-            <p><a asp-page="/index">Začít znova</a></p>
+            <p><a asp-page="/location" asp-route-path="@path.NextLocationId">@path.Description</a></p>
         }
-        else
-        {
-            foreach (var path in Model.location.Paths)
-            {
-                <p><a asp-page="/location" asp-route-path="@path.NextLocationId">@path.Description</a></p>
-            }
-            <p><a asp-page="/location" asp-page-handler="SearchFood" asp-route-path="@Model.location.Id">Hledat jídlo</a></p>
-            <p><a asp-page="/location" asp-page-handler="Sleep" asp-route-path="@Model.location.Id">Vyspat se</a></p>
-        }
+        <p><a asp-page="/location" asp-page-handler="SearchFood" asp-route-path="@Model.location.Id">Hledat jídlo</a></p>
+        <p><a asp-page="/location" asp-page-handler="Sleep" asp-route-path="@Model.location.Id">Vyspat se</a></p>
 
         <hr />
 

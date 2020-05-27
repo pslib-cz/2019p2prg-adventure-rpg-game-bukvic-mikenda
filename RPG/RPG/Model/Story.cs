@@ -15,8 +15,7 @@ namespace RPG.Model
                 Paths = new List<Path>()
                 {
                     new Path() { Id = 0, Description = "Vyspat se", NextLocationId = 1}
-                },
-                Achievement = new Achievement() { Name = "Žhář", Description = "Zápalit oheň"}
+                }
             });
 
             locations.Add(1, new Location()
@@ -34,7 +33,7 @@ namespace RPG.Model
                     new Path() { Id = 0, Description = "Jít hledat materiál na přístavek do lesa", NextLocationId = 10},
                     new Path() { Id = 1, Description = "Jít hledat materiál na přístavek na pláž", NextLocationId = 3},
                     new Path() { Id = 2, Description = "Jít hledat do lesa jeskyni", NextLocationId = 11},
-                }
+                },
             });
 
             locations.Add(3, new Location()
@@ -134,7 +133,8 @@ namespace RPG.Model
                     new Path() { Id = 1, Description = "Utéct z jeskyně", NextLocationId = 13},
                     new Path() { Id = 2, Description = "Odejít z jeskyně", NextLocationId = 15},
                     new Path() { Id = 3, Description = "Bojovat s prasetem", NextLocationId = 21}
-                }
+                },
+                Achievement = new Achievement() { Name = "Jeskyňář", Description = "objevil si jeskyni" }
             });
 
             locations.Add(21, new Location()

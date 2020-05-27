@@ -31,14 +31,24 @@ namespace RPG.Service
         {
             int current = 0;
             if (path != 0) current = _session.GetLocation().GetValueOrDefault();
+            
+            _session.SaveLocation(current);
+
+            Achievement achievement = _story.locations[current].Achievement;
+            if (achievement != null)
+            {
+                Stats.Achievements.Add(new Achievement() { Description = achievement.Description, Name = achievement.Name });
+                _session.SaveStats(Stats);
+                
+            }
 
             if (_story.locations[current].Paths.Any(i => i.NextLocationId == path))
             {
                 _session.SaveLocation(path);
-                _session.SaveStats(Stats);
                 return _story.locations[path];
             }
 
+            _session.SaveStats(Stats);
             return _story.locations[current];
         }
 
@@ -53,12 +63,6 @@ namespace RPG.Service
         {
             Stats.Food += _rand.Next(50, 80);
             Stats.Energy -= _rand.Next(10, 20);
-            _session.SaveStats(Stats);
-        }
-
-        public void AddAchievement(string name, string description)
-        {
-            Stats.Achievements.Add(new Achievement() { Description = description, Name = name });
             _session.SaveStats(Stats);
         }
     }
