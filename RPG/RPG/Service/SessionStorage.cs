@@ -13,6 +13,7 @@ namespace RPG.Service
         readonly ISession _session;
 
         const string STATSKEY = "STATS";
+        const string LOCATIONKEY = "LOCATION";
 
         public User Stats { get; set; }
 
@@ -26,6 +27,16 @@ namespace RPG.Service
         public void SaveStats(User stats)
         {
             _session.Set(STATSKEY, stats);
+        }
+
+        public void SaveLocation(int loc)
+        {
+            _session.SetInt32(LOCATIONKEY, loc);
+        }
+
+        public int? GetLocation()
+        {
+            return _session.GetInt32(LOCATIONKEY);
         }
 
     }

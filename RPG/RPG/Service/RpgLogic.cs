@@ -29,8 +29,17 @@ namespace RPG.Service
 
         public Location Play(int path)
         {
-            _session.SaveStats(Stats);
-            return _story.locations[path];
+            int current = 0;
+            if (path != 0) current = _session.GetLocation().GetValueOrDefault();
+
+            if (_story.locations[current].Paths.Any(i => i.NextLocationId == path))
+            {
+                _session.SaveLocation(path);
+                _session.SaveStats(Stats);
+                return _story.locations[path];
+            }
+
+            return _story.locations[current];
         }
 
         public void Sleep()

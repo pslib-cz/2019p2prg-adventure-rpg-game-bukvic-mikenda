@@ -118,7 +118,11 @@ namespace RPG.Model
             });
 
             locations.Add(15, new Location()
-            { Id = 15,  Name = "Les",  Description = "Prase se rozběhlo proti tobě a zabilo tě."
+            { Id = 15,  Name = "Les",  Description = "Prase se rozběhlo proti tobě a zabilo tě.",
+                Paths = new List<Path>()
+                {
+                    new Path() { Id = 1, Description = "ZAČÍT ZNOVU", NextLocationId = 0},
+                }
             });
 
             
