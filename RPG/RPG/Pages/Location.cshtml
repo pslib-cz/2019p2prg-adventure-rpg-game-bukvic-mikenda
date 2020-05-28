@@ -8,11 +8,11 @@
     <div class="text-center">
         @if (Model.location.Achievement != null)
         {
-            <p>Získán nový úspěch - @Model.location.Achievement.Name (@Model.location.Achievement.Description) - <a asp-page="/Achievements">ZOBRAZIT ÚSPĚCHY</a></p>
+            <p>Získán nový úspěch - @Model.location.Achievement.Name (@Model.location.Achievement.Description)</p>
             <hr />
         }
 
-        
+
 
         <h1 class="display-4">@Model.location.Name</h1>
         <p>@Model.location.Description</p>
@@ -23,14 +23,24 @@
         {
             <p><a asp-page="/location" asp-route-path="@path.NextLocationId">@path.Description</a></p>
         }
-        <p><a asp-page="/location" asp-page-handler="SearchFood" asp-route-path="@Model.location.Id">Hledat jídlo</a></p>
-        <p><a asp-page="/location" asp-page-handler="Sleep" asp-route-path="@Model.location.Id">Vyspat se</a></p>
+
+        @if (Model.location.CanSearchFood)
+        {
+            <p><a asp-page="/location" asp-page-handler="SearchFood">Hledat jídlo</a></p>
+        }
+        @if (Model.location.CanSleep)
+        {
+            <p><a asp-page="/location" asp-page-handler="Sleep">Vyspat se</a></p>
+        }
 
         <hr />
 
-        <h2>Tvé statistiky:</h2>
-        <p>Jídlo: @Model.Stats.Food%</p>
-        <p>Energie: @Model.Stats.Energy%</p>
+        @if (Model.location.ShowStats)
+        {
+            <h2>Tvé statistiky:</h2>
+            <p>Jídlo: @Model.Stats.Food%</p>
+            <p>Energie: @Model.Stats.Energy%</p>
+        }
 
     </div>
 

@@ -11,6 +11,9 @@ namespace RPG.Model
         public string Name { get; set; }
         public string Description { get; set; }
         public bool IsLocked { get; set; }
+        public bool CanSleep { get; set; } = true;
+        public bool CanSearchFood { get; set; } = true;
+        public bool ShowStats { get; set; } = true;
         public List<Path> Paths { get; set; }     
         public Achievement Achievement { get;set; }
     }

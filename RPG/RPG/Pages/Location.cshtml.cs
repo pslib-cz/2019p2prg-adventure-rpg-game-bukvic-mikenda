@@ -27,17 +27,15 @@ namespace RPG.Pages
             location = _rpgLogic.Play(path);
         }
 
-        public void OnGetSleep(int path)
+        public void OnGetSleep()
         {
-            _rpgLogic.Sleep();
-            location = _rpgLogic.Play(path);
+            location = _rpgLogic.Sleep();
             Stats = _rpgLogic.Stats;
         }
 
-        public void OnGetSearchFood (int path)
+        public void OnGetSearchFood()
         {
-            _rpgLogic.SearchFood();
-            location = _rpgLogic.Play(path);
+            location = _rpgLogic.SearchFood();
             Stats = _rpgLogic.Stats;
         }
 

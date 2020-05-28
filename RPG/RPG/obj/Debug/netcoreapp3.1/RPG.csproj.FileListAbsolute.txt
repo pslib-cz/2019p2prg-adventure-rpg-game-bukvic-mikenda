@@ -340,3 +340,5 @@ C:\Users\PC\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj
 C:\Users\PC\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.dll
 C:\Users\PC\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.pdb
 C:\Users\PC\Source\Repos\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\RPG.genruntimeconfig.cache
+C:\Users\PC\Source\Repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\Razor\Pages\Achievements.cshtml.g.cs
+C:\Users\PC\Source\Repos\pslib-cz\2019p2prg-adventure-rpg-game-bukvic-mikenda\RPG\RPG\obj\Debug\netcoreapp3.1\Razor\Pages\Story.cshtml.g.cs
