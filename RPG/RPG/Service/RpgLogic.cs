@@ -38,8 +38,8 @@ namespace RPG.Service
             Stats.Energy -= _rand.Next(5, 10);
             Stats.Food -= _rand.Next(10, 15);
 
-            if (Stats.Food < 1) return _story.locations[8];
-            if (Stats.Energy < 1) return _story.locations[9];
+            if (Stats.Food < 1) return _story.locations[5];
+            if (Stats.Energy < 1) return _story.locations[6];
 
             _session.SaveStats(Stats);
 
